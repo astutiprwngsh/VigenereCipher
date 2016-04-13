@@ -37,6 +37,9 @@ Hampir sama dengan fungsi enkripsinya, pertama adalah mengurangkan input (hasil 
 Karena dalam C++ tidak bisa memodulokan bilangan negatif, maka hasilnya ditambahkan dengan 26 agar menjadi bilangan positif.
 Kemudian modulo 26 (untuk bisa looping alfabet A-Z), dan terakhir ditambah 65 untuk kembali ke kode ASCII semula.
 
+Fungsi dalam kode program :
+hasil[i] = ((input[i]-key[i%key.length()])+26)%26 +65;
+
 
 ### Main Program
 Input kata untuk dienkripsi dan key-nya.
